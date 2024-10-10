@@ -3,8 +3,16 @@ import connectDB from "../lib/connectdb";
 
 export async function POST(request)
 {
-    const res = await request.json();
-    console.log(res);
+    await connectDB();
 
-    return Response.json({ done:true })
+    const {name, age} = request.json();
+    
+
+    const person = new user({
+        name:name,
+        age:age
+    })
+
+    await person.save();
+    console.log("inside api ", name, age);
 }
