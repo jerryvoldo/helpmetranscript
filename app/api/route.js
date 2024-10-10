@@ -1,11 +1,13 @@
 import user from "../model/User";
 import connectDB from "../lib/connectdb";
 
-export async function POST(request, response)
+export async function POST(request)
 {
     await connectDB();
 
     const {name, age} = request.body;
+
+    console.log(request.body);
 
     const person = new user({
         name:name,
