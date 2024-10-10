@@ -3,7 +3,7 @@ import Head from "next/head";
 export default function Home() {
   return (
     <div>
-      <form action="./api/data" method="POST">
+      <form action="/api" method="POST">
         <label>Enter name</label>
         <input className="border" type="text" name="name" id="name"></input>
         
