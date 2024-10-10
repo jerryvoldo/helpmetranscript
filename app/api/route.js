@@ -14,5 +14,4 @@ export async function POST(request, response)
 
     await person.save();
     console.log("inside api ", name, age);
-    response.status(200).json({done: true});
 }
