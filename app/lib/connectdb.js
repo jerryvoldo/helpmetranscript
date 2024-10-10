@@ -20,6 +20,7 @@ async function connectDB() {
     if (!cached.promise) {
         const opts = {
           bufferCommands: false,
+          dbName: "transcripts",
         };
 
         cached.promise = mongoose.connect(DATABASE_URL, opts).then((mongoose) => {
