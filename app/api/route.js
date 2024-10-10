@@ -7,7 +7,7 @@ export async function POST(request)
 
     const {name, age} = request.body;
 
-    console.log(request.body);
+    console.log(name);
 
     const person = new user({
         name:name,
