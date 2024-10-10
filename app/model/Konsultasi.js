@@ -63,3 +63,5 @@ const Konsultasi = mongoose.Schema(
         path_ttd_file: String,
     }
 )
+
+export default mongoose.models.Konsultasi || mongoose.model("Konsultasi", Konsultasi);
