@@ -14,6 +14,18 @@ export default function Home() {
           <input className="grow" type="text" name="alamat" id="alamat" />
         </label>
 
+        <label className="mb-2 input input-bordered flex items-center gap-2">Nomor Telepon
+          <input className="grow" type="text" name="notlpn" id="notlpn" />
+        </label>
+
+        <label className="mb-2 input input-bordered flex items-center gap-2">Nomor Whatsapp
+          <input className="grow" type="text" name="nowa" id="nowa" />
+        </label>
+
+        <label className="mb-2 input input-bordered flex items-center gap-2">Email
+          <input className="grow" type="email" name="email" id="email" />
+        </label>
+
         <button className="btn btn-primary" type="submit">Submit</button>
       </form>
     </div>
