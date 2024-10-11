@@ -6,19 +6,19 @@ export default function Home() {
       <label className="h4">Data Pengkonsul</label>
 
       <form action="/api" method="POST">
-        <label className="mb-2 input input-bordered flex items-center">Nama
+        <label className="mb-2 input input-bordered flex items-center gap-2">Nama
           <input className="grow" type="text" name="name" id="name" />
         </label>
         
-        <label className="mb-2 input input-bordered flex items-center">Alamat
+        <label className="mb-2 input input-bordered flex items-center gap-2">Alamat
           <input className="grow" type="text" name="alamat" id="alamat" />
         </label>
 
-        <label className="mb-2 input input-bordered flex items-center">Nomor Telepon
+        <label className="mb-2 input input-bordered flex items-center gap-2">Nomor Telepon
           <input className="grow" type="text" name="notlpn" id="notlpn" />
         </label>
 
-        <label className="mb-2 input input-bordered flex items-center">Nomor Whatsapp
+        <label className="mb-2 input input-bordered flex items-center gap-2">Nomor Whatsapp
           <input className="grow" type="text" name="nowa" id="nowa" />
         </label>
 
