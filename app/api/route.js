@@ -1,21 +1,28 @@
-import user from "../model/User";
+import client from "../model/Client";
 import connectDB from "../lib/connectdb";
 
 export async function POST(request)
 {
     const formData = await request.formData();
-    const name = formData.get('name');
-    const age = formData.get('age');
+    const nama = formData.get('nama');
+    const alamat = formData.get('alamat');
+    const notlpn = formData.get('notlpn');
+    const nowa = formData.get('nowa');
+    const email = formData.get('email');
+
+    const objClient = {
+        nama:nama,
+        alamat:alamat,
+        notlpn:notlpn,
+        nowa:nowa,
+        email:email
+    };
     
     await connectDB();
 
-    const person = new user({
-        name:name,
-        age:age
-    })
+    const client = new client(objClient)
 
-    await person.save();
-    console.log("inside api ", name, age);
+    await client.save();
 
-    return Response.json({name, age});
+    return Response.json(objClient);
 }
