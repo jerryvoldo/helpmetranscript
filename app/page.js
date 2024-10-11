@@ -6,7 +6,7 @@ export default function Home() {
       <label className="h4">Nama Pengkonsul</label>
 
       <form action="/api" method="POST">
-        <label className="gap-2 input input-bordered flex items-center gap-2">Nama
+        <label className="mb-2 input input-bordered flex items-center gap-2">Nama
           <input className="grow" type="text" name="name" id="name" />
         </label>
         
