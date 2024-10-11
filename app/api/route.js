@@ -20,9 +20,9 @@ export async function POST(request)
     
     await connectDB();
 
-    const client = new client(objClient)
+    const consult = new client(objClient)
 
-    await client.save();
+    await consult.save();
 
     return Response.json(objClient);
 }

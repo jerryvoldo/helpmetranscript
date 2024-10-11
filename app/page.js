@@ -7,7 +7,7 @@ export default function Home() {
 
       <form action="/api" method="POST">
         <label className="mb-2 input input-bordered flex items-center gap-2">Nama
-          <input className="grow" type="text" name="name" id="name" />
+          <input className="grow" type="text" name="nama" id="nama" />
         </label>
         
         <label className="mb-2 input input-bordered flex items-center gap-2">Alamat
