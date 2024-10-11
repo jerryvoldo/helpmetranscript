@@ -51,7 +51,7 @@ const AsosiasiPerusahaan = mongoose.Schema(
     }
 )
 
-const Konsultasi = mongoose.Schema(
+const Client = mongoose.Schema(
     {
         nama_client: String,
         alamat: String,
@@ -64,4 +64,4 @@ const Konsultasi = mongoose.Schema(
     }
 )
 
-export default mongoose.models.Konsultasi || mongoose.model("Konsultasi", Konsultasi);
+export default mongoose.models.Client || mongoose.model("Client", Client);
