@@ -26,6 +26,8 @@ export default function Home() {
           <input className="grow" type="email" name="email" id="email" />
         </label>
 
+        <p className="h3 my-4">Perusahaan</p>
+
         <button className="btn btn-primary" type="submit">Submit</button>
       </form>
     </div>
