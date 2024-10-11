@@ -22,7 +22,7 @@ export default function Home() {
           <input className="grow" type="text" name="nowa" id="nowa" />
         </label>
 
-        <label className="mb-2 input input-bordered flex items-center">Email
+        <label className="mb-2 input input-bordered flex items-center gap-2">Email
           <input className="grow" type="email" name="email" id="email" />
         </label>
 
