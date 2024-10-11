@@ -6,11 +6,13 @@ export default function Home() {
       <label className="h4">Nama Pengkonsul</label>
 
       <form action="/api" method="POST">
-        <label>Nama</label>
-        <input className="input input-bordered w-full max-w-xs" type="text" name="name" id="name"></input>
+        <label className="gap-2 input input-bordered flex items-center gap-2">Nama
+          <input className="grow" type="text" name="name" id="name" />
+        </label>
         
-        <label>ALamat</label>
-        <input className="input input-bordered w-full max-w-xs" type="number" name="age" id="age"></input>
+        <label className="mb-2 input input-bordered flex items-center gap-2">Alamat
+          <input className="grow" type="text" name="alamat" id="alamat" />
+        </label>
 
         <button className="btn btn-primary" type="submit">Submit</button>
       </form>
