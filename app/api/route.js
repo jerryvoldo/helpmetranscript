@@ -10,12 +10,18 @@ export async function POST(request)
     const nowa = formData.get('nowa');
     const email = formData.get('email');
 
+    const nama_perusahaan = formData.get('nama_perusahaan');
+    const alamat_perusahaan = formData.get('alamat_perusahaan');
+    const notlpn_perusahaan = formData.get('notlpn_perusahaan');
+    const nowa_perusahaan = formData.get('nowa_perusahaan');
+    const email_perusahaan = formData.get('email_perusahaan');
+
     const objClient = {
         nama:nama,
         alamat:alamat,
         notlpn:notlpn,
         nowa:nowa,
-        email:email
+        email:email,
     };
     
     await connectDB();
