@@ -53,7 +53,7 @@ const AsosiasiPerusahaan = mongoose.Schema(
 
 const Client = mongoose.Schema(
     {
-        nama_client: String,
+        nama: String,
         alamat: String,
         notlpn: String,
         nowa: String,
