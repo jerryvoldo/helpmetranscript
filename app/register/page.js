@@ -4,7 +4,7 @@ export default function Register()
         <div>
             <label className="h4">Data Pengkonsul</label>
 
-            <form action="/api" method="POST">
+            <form action="/api/register" method="POST">
             <label className="mb-2 input input-bordered flex items-center gap-2">Nama
                 <input className="grow" type="text" name="nama" id="nama" />
             </label>
