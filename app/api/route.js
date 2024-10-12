@@ -22,6 +22,14 @@ export async function POST(request)
         notlpn:notlpn,
         nowa:nowa,
         email:email,
+        asosiasi_perusahaan : 
+        {
+            nama_perusahaan:nama_perusahaan,
+            alamat_perusahaan:alamat_perusahaan,
+            notlpn_perusahaan:notlpn_perusahaan,
+            nowa_perusahaan:nowa_perusahaan,
+            email_perusahaan:email_perusahaan,
+        }
     };
     
     await connectDB();
