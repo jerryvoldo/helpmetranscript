@@ -4,7 +4,7 @@ import connectDB from "../../lib/connectdb";
 export async function POST(request)
 {
     const formData = await request.formData();
-    const nama = formData.get('nama');
+    const nama_client = formData.get('nama');
     const alamat = formData.get('alamat');
     const notlpn = formData.get('notlpn');
     const nowa = formData.get('nowa');
@@ -17,7 +17,7 @@ export async function POST(request)
     const email_perusahaan = formData.get('email_perusahaan');
 
     const objClient = {
-        nama:nama,
+        nama:nama_client,
         alamat:alamat,
         notlpn:notlpn,
         nowa:nowa,
