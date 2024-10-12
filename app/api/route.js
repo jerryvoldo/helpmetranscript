@@ -10,7 +10,7 @@ export async function POST(request)
     await connectDB();
 
     try {
-        const data = client.find({email:email}).select('nama nowa');
+        const data = client.find({email:email}).select('asosiasi_perusahaan');
         console.log(await data.exec());
     } catch (e) {
         console.log(e);
