@@ -11,7 +11,11 @@ export async function POST(request)
 
     const consult = new client();
 
-    const data = await consult.find({nama:email}).exec();
+    try {
+        const data = consult.find({}).exec();
+    } catch (e) {
+        console.log(e);
+    }
 
-    return Response.json(data);
+    return Response.json({});
 }
