@@ -24,11 +24,11 @@ export async function POST(request)
         email:email,
         asosiasi_perusahaan : 
         {
-            nama_perusahaan:nama_perusahaan,
-            alamat_perusahaan:alamat_perusahaan,
-            notlpn_perusahaan:notlpn_perusahaan,
-            nowa_perusahaan:nowa_perusahaan,
-            email_perusahaan:email_perusahaan,
+            nama:nama_perusahaan,
+            alamat:alamat_perusahaan,
+            notlpn:notlpn_perusahaan,
+            nowa:nowa_perusahaan,
+            email:email_perusahaan,
         }
     };
     
