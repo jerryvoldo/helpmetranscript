@@ -10,8 +10,8 @@ export async function POST(request)
     await connectDB();
 
     try {
-        const data = await client.find({email:email}).select('nama nowa');
-        console.log(data.exec());
+        const data = client.find({email:email}).select('nama nowa');
+        console.log(await data.exec());
     } catch (e) {
         console.log(e);
     }
