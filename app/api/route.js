@@ -9,10 +9,9 @@ export async function POST(request)
 
     await connectDB();
 
-    const consult = new client();
-
     try {
-        const data = consult.find({}).exec();
+        const data = await client.find({}).exec();
+        console.log(data);
     } catch (e) {
         console.log(e);
     }
