@@ -14,11 +14,18 @@ export async function POST(request)
     try {
         const data = client.find({email:email}).select('asosiasi_perusahaan');
         const perusahaans = await data.exec();
-        console.log(perusahaans);
+        if(perusahaans.count() != 0 )
+        {
+            redirect('/')
+        }
+        else 
+        {
+            redirect('/register');
+        }
     } catch (e) {
         console.log(e);
     }
 
-    redirect('/');
+    return
     
 }
