@@ -11,9 +11,8 @@ export async function POST(request)
 
     try {
         const data = client.find({email:email}).select('asosiasi_perusahaan');
-        const perusahaans = await data.exec()
-
-        perusahaans.forEach(p => {console.log(p)});
+        const perusahaans = await data.exec();
+        console.log(perusahaans);
     } catch (e) {
         console.log(e);
     }
