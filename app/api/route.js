@@ -14,7 +14,7 @@ export async function POST(request)
     try {
         const data = client.find({email:email}).select('asosiasi_perusahaan');
         const perusahaans = await data.exec();
-        if(perusahaans.count() != 0 )
+        if(perusahaans)
         {
             redirect('/')
         }
@@ -26,6 +26,6 @@ export async function POST(request)
         console.log(e);
     }
 
-    return
+    return Response.json({status:true});
     
 }
