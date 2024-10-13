@@ -1,5 +1,7 @@
 import client from "../model/Client";
 import connectDB from "../lib/connectdb";
+ 
+import { redirect } from 'next/navigation'
 
 export async function POST(request)
 {
@@ -17,5 +19,6 @@ export async function POST(request)
         console.log(e);
     }
 
-    return Response.json({});
+    redirect('/');
+    
 }
